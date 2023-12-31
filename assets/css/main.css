@@ -31,6 +31,10 @@ footer, header, hgroup, menu, nav, section {
 
 body {
 	line-height: 1;
+	margin: 0;
+  	padding: 0;
+	transform: scale(1); /* Adjust the scale factor as needed */
+  	transform-origin: center center; /* Set the origin to the top left corner */
 }
 
 ol, ul {
@@ -176,6 +180,7 @@ input, select, textarea {
 	}
 
 	p {
+		font-size: 0.9rem;
 		text-align: justify;
 		margin: 0 0 2rem 0;
 	}
@@ -2795,7 +2800,6 @@ input, select, textarea {
 						ul.actions:not(.fixed) li .button.icon:before {
 							margin-left: -0.5rem;
 						}
-
 		}
 
 /* Icons */
@@ -3306,7 +3310,8 @@ input, select, textarea {
     cursor: default;
     text-align: center;
     z-index: 1;
-    min-height: 100vh;
+    min-height: 50vh;
+	padding-bottom: 0.25rem;
 }
 
 #intro input, #intro select, #intro textarea {
@@ -3382,8 +3387,9 @@ input, select, textarea {
 }
 
 #intro h1 {
-    font-size: 5rem;
+    font-size: 3rem;
     line-height: 1;
+    margin-top: 0; /* Adjust the margin-top to reduce the space */
 }
 
 #intro p {
@@ -3616,7 +3622,7 @@ body.is-preload #intro:not(.hidden) + #header + #nav {
 		padding: 0 2rem 0 0;
 		position: relative;
 		width: calc(100% - 4rem);
-		max-width: 72rem;
+		max-width: 60rem;
 		z-index: 2;
 	}
 
@@ -3753,7 +3759,7 @@ body.is-preload #intro:not(.hidden) + #header + #nav {
 		position: relative;
 		margin: 0 auto;
 		width: calc(100% - 4rem);
-		max-width: 72rem;
+		max-width: 60rem;
 		z-index: 2;
 	}
 
@@ -3780,14 +3786,17 @@ body.is-preload #intro:not(.hidden) + #header + #nav {
 			}
 
 			#main > .post header.major > h1, #main > .post header.major h2 {
-				font-size: 4rem;
+				font-size: 3rem;
 				line-height: 1.1;
-				margin: 0 0 2rem 0;
+				margin: 0 0 0 0;
+				padding: 1rem 1rem 1rem 1rem;
+
 			}
 
 			#main > .post.featured {
 				text-align: center;
-			}
+				padding: 2rem 2rem 2rem 2rem; /* Adjust the padding if necessary */
+			  }
 
 			@media screen and (max-width: 1280px) {
 
@@ -3952,7 +3961,7 @@ body.is-preload #intro:not(.hidden) + #header + #nav {
 		position: relative;
 		margin: 0 auto;
 		width: calc(100% - 4rem);
-		max-width: 72rem;
+		max-width: 60rem;
 		z-index: 2;
 	}
 
